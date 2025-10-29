@@ -18,6 +18,11 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['mathjs'],
+      output: {
+        globals: {
+          mathjs: 'mathjs',
+        },
+      }
     },
     outDir: 'dist',
     emptyOutDir: true,
