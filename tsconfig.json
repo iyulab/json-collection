@@ -1,19 +1,52 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    // 기본 컴파일러 옵션
+    "target": "ESNext",
     "module": "ESNext",
-    "target": "es6",
-    "lib": ["es2017", "dom"],
-    "sourceMap": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "moduleResolution": "Bundler",
+    
+    // 엄격한 타입 체킹
     "strict": true,
-    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+
+    // 코드 품질 관련
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // 모듈 및 호환성 설정
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "declaration": true,
-    "types": ["jest"],
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    // 데코레이터 지원
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // 출력 설정
+    "noEmit": true,
+
+    // 기타 옵션
+    "useDefineForClassFields": false,
+    "skipLibCheck": true,
+    "types": ["vitest/globals"]
   },
   "include": [
     "src/**/*",
-    "tests/**/*"
-, "test/Summerizer.test.ts"  ],
-  "exclude": ["node_modules", "dist"]
+    "tests/**/*",
+    "vite.config.ts",
+    "vite-env.d.ts"  
+  ],
+  "exclude": [
+    "node_modules", 
+    "dist"
+  ]
 }

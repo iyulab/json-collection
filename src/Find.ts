@@ -1,6 +1,6 @@
 // src/Find.ts
 // mongodb 의 db.collection.find({?}) 문법을 모방한 구현입니다.
-import { compare, compareValues, matchFilter } from "./Functions";
+import { compare, matchFilter } from "./internals";
 
 export interface FindOptions {
   $match?: any;

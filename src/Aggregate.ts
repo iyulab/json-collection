@@ -1,6 +1,6 @@
 // src/Aggregate.ts
 // mongodb 의 db.collection.aggregate({?}) 문법을 모방한 구현입니다.
-import { compare, compareValues, matchFilter } from "./Functions";
+import { compare, matchFilter } from "./internals";
 import * as math from "mathjs";
 // import { List } from "immutable";
 // import linq from "linq";

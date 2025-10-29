@@ -1,3 +1,6 @@
 // src/index.ts
-export * from "./Find";
-export * from "./Aggregate";
+export { find } from "./find";
+export { aggregate } from "./aggregate";
+
+export type { FindOptions } from './find';
+export type { AggregateOptions } from './aggregate';
