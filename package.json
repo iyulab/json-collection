@@ -30,8 +30,8 @@
     }
   },
   "scripts": {
-    "test": "eslint tests && vitest run",
-    "build": "eslint src && vite build",
+    "test": "eslint && vitest run",
+    "build": "eslint && vite build",
     "deploy": "npm publish --access public"
   },
   "dependencies": {
