@@ -5,6 +5,7 @@
     "module": "ESNext",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "moduleResolution": "Bundler",
+    "types": ["vite/client", "vitest/globals"],
     
     // 엄격한 타입 체킹
     "strict": true,
@@ -37,7 +38,6 @@
     // 기타 옵션
     "useDefineForClassFields": false,
     "skipLibCheck": true,
-    "types": ["vitest/globals"]
   },
   "include": [
     "src/**/*",
