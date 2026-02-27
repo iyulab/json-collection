@@ -35,8 +35,7 @@
     "deploy": "npm publish --access public"
   },
   "dependencies": {
-    "mathjs": "^15.1.1",
-    "quill": "2.0.3"
+    "mathjs": "^15.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
